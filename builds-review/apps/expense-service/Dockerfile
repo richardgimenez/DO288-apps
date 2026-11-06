@@ -1,4 +1,4 @@
-FROM quay.io/redhattraining/ocpdev-ubi8-openjdk-17-base:latest
+FROM registry.redhat.io/ubi8/openjdk-17:1.23-6.1793585665
 
 COPY pom.xml .
 RUN mvn dependency:go-offline
